@@ -3,7 +3,7 @@ import './PageCommon.css'
 export default function GioiThieu() {
   return (
     <div className="page">
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #dd3333, #ac1c24)' }}>
+      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #38bdf8, #0284c7)' }}>
         <div className="container">
           <h1>Giới Thiệu</h1>
           <p>Nhà xe AnhHuy92 – Hơn 20 năm phục vụ hành khách</p>
@@ -16,7 +16,7 @@ export default function GioiThieu() {
             <h2>Về Nhà Xe AnhHuy92</h2>
             <p>
               Nhà xe AnhHuy92 được thành lập từ năm 2003, là một trong những đơn vị vận tải hành khách
-              uy tín hàng đầu trên tuyến Hà Nội – Thái Bình – Nam Định. Trải qua hơn 20 năm hoạt động,
+              uy tín hàng đầu trên tuyến Hà Nội – Hưng Yên – Hải Dương – Hải Phòng – Móng Cái. Trải qua hơn 20 năm hoạt động,
               chúng tôi đã phục vụ hàng triệu lượt hành khách với chất lượng dịch vụ ngày càng được nâng cao.
             </p>
             <p>

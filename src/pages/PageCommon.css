@@ -33,13 +33,13 @@
   font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 20px;
-  color: #dd3333;
+  color: #4f7c5c;
 }
 
 .about-text p {
   font-size: 0.95rem;
   line-height: 1.8;
-  color: #555;
+  color: #7a7568;
   margin-bottom: 14px;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .stat-card {
-  background: #fec904;
+  background: #d6ebe0;
   border-radius: 12px;
   padding: 24px;
   text-align: center;
@@ -59,13 +59,13 @@
 .stat-num {
   font-size: 2rem;
   font-weight: 800;
-  color: #000;
+  color: #2c2c28;
 }
 
 .stat-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #333;
+  color: #2c2c28;
   margin-top: 4px;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .value-card {
-  background: #fff;
-  border: 2px solid #f0f0f0;
+  background: #f8f7f2;
+  border: 2px solid #c9c4b5;
   border-radius: 12px;
   padding: 28px 20px;
   text-align: center;
@@ -90,7 +90,7 @@
 }
 
 .value-card:hover {
-  border-color: #fec904;
+  border-color: #4f7c5c;
   transform: translateY(-4px);
 }
 
@@ -103,17 +103,17 @@
   font-size: 1rem;
   font-weight: 800;
   margin-bottom: 10px;
-  color: #111;
+  color: #2c2c28;
 }
 
 .value-card p {
   font-size: 0.85rem;
-  color: #666;
+  color: #7a7568;
   line-height: 1.65;
 }
 
 .mission-section {
-  background: #f8f8f8;
+  background: #eeeae0;
   border-radius: 16px;
   padding: 40px;
   text-align: center;
@@ -123,15 +123,15 @@
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 20px;
-  color: #111;
+  color: #2c2c28;
 }
 
 .mission-section blockquote {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: #7a7568;
   font-style: italic;
-  border-left: 4px solid #fec904;
+  border-left: 4px solid #4f7c5c;
   padding-left: 24px;
   text-align: left;
   max-width: 800px;
@@ -151,8 +151,8 @@
 }
 
 .schedule-table th {
-  background: #fec904;
-  color: #000;
+  background: #4f7c5c;
+  color: #fff;
   font-weight: 800;
   padding: 12px 16px;
   text-align: left;
@@ -161,12 +161,12 @@
 
 .schedule-table td {
   padding: 12px 16px;
-  border-bottom: 1px solid #f0f0f0;
-  color: #444;
+  border-bottom: 1px solid #c9c4b5;
+  color: #2c2c28;
 }
 
 .schedule-table tr:hover td {
-  background: #fffbea;
+  background: #d6ebe0;
 }
 
 .schedule-table .badge {
@@ -183,8 +183,8 @@
 }
 
 .badge-yellow {
-  background: #fff3cd;
-  color: #856404;
+  background: #d6ebe0;
+  color: #4f7c5c;
 }
 
 /* CONTACT PAGE */
@@ -199,7 +199,7 @@
   font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: 24px;
-  color: #111;
+  color: #2c2c28;
 }
 
 .form-group {
@@ -210,7 +210,7 @@
   display: block;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #555;
+  color: #7a7568;
   margin-bottom: 6px;
 }
 
@@ -219,11 +219,12 @@
 .form-group select {
   width: 100%;
   padding: 12px 14px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #c9c4b5;
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
-  color: #333;
+  color: #2c2c28;
+  background: #eeeae0;
   outline: none;
   transition: border-color 0.2s;
 }
@@ -231,7 +232,7 @@
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-  border-color: #fec904;
+  border-color: #4f7c5c;
 }
 
 .form-group textarea {
@@ -240,7 +241,7 @@
 }
 
 .submit-btn {
-  background: #dd3333;
+  background: #4f7c5c;
   color: #fff;
   border: none;
   padding: 14px 32px;
@@ -253,7 +254,7 @@
 }
 
 .submit-btn:hover {
-  background: #ac1c24;
+  background: #2e5c3e;
 }
 
 .info-card {
@@ -261,14 +262,14 @@
   align-items: flex-start;
   gap: 14px;
   padding: 18px;
-  border: 2px solid #f0f0f0;
+  border: 2px solid #c9c4b5;
   border-radius: 10px;
   margin-bottom: 16px;
   transition: border-color 0.2s;
 }
 
 .info-card:hover {
-  border-color: #fec904;
+  border-color: #4f7c5c;
 }
 
 .info-icon {
@@ -279,18 +280,18 @@
 .info-card h4 {
   font-size: 0.9rem;
   font-weight: 800;
-  color: #333;
+  color: #2c2c28;
   margin-bottom: 4px;
 }
 
 .info-card p {
   font-size: 0.88rem;
-  color: #666;
+  color: #7a7568;
   line-height: 1.5;
 }
 
 .info-card a {
-  color: #dd3333;
+  color: #4f7c5c;
   font-weight: 700;
 }
 
@@ -302,10 +303,10 @@
 .address-section h2 {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #dd3333;
+  color: #4f7c5c;
   margin-bottom: 24px;
   padding-bottom: 10px;
-  border-bottom: 3px solid #fec904;
+  border-bottom: 3px solid #4f7c5c;
 }
 
 .address-cards {
@@ -315,34 +316,34 @@
 }
 
 .address-card {
-  background: #fff;
-  border: 2px solid #f0f0f0;
+  background: #f8f7f2;
+  border: 2px solid #c9c4b5;
   border-radius: 12px;
   padding: 24px;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .address-card:hover {
-  border-color: #fec904;
-  box-shadow: 0 4px 16px rgba(254,201,4,0.15);
+  border-color: #4f7c5c;
+  box-shadow: 0 4px 16px rgba(79,124,92,0.15);
 }
 
 .address-card h3 {
   font-size: 1rem;
   font-weight: 800;
-  color: #dd3333;
+  color: #4f7c5c;
   margin-bottom: 12px;
 }
 
 .address-detail {
   font-size: 0.87rem;
-  color: #555;
+  color: #7a7568;
   margin-bottom: 8px;
   line-height: 1.5;
 }
 
 .address-detail a {
-  color: #dd3333;
+  color: #4f7c5c;
   font-weight: 700;
 }
 
@@ -357,12 +358,12 @@
 .news-card {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #c9c4b5;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .news-card:hover {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   transform: translateY(-4px);
 }
 
@@ -378,33 +379,33 @@
 
 .news-date {
   font-size: 0.78rem;
-  color: #999;
+  color: #7a7568;
   margin-bottom: 8px;
 }
 
 .news-title {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #111;
+  color: #2c2c28;
   margin-bottom: 10px;
   line-height: 1.4;
 }
 
 .news-excerpt {
   font-size: 0.85rem;
-  color: #666;
+  color: #7a7568;
   line-height: 1.6;
   margin-bottom: 14px;
 }
 
 .news-read-more {
   font-size: 0.85rem;
-  color: #dd3333;
+  color: #4f7c5c;
   font-weight: 700;
 }
 
 .news-read-more:hover {
-  color: #ac1c24;
+  color: #2e5c3e;
 }
 
 /* RESPONSIVE */

@@ -1,5 +1,5 @@
 .schedule-filter {
-  background: #f8f8f8;
+  background: #eeeae0;
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 30px;
@@ -23,46 +23,50 @@
 .filter-field label {
   font-size: 0.82rem;
   font-weight: 700;
-  color: #555;
+  color: #7a7568;
   text-transform: uppercase;
 }
 
 .filter-field select {
   padding: 10px 14px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #c9c4b5;
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
-  color: #333;
+  color: #2c2c28;
+  background: #f8f7f2;
   outline: none;
 }
 
 .filter-field select:focus {
-  border-color: #fec904;
+  border-color: #4f7c5c;
 }
 
 .filter-reset {
-  background: #fec904;
+  background: #d6ebe0;
+  color: #2c2c28;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
   font-weight: 700;
   font-size: 0.9rem;
   align-self: flex-end;
+  transition: background 0.2s;
 }
 
 .filter-reset:hover {
-  background: #e6b400;
+  background: #4f7c5c;
+  color: #fff;
 }
 
 .filter-count {
   margin-top: 12px;
   font-size: 0.88rem;
-  color: #666;
+  color: #7a7568;
 }
 
 .book-link {
-  background: #dd3333;
+  background: #4f7c5c;
   color: #fff;
   padding: 6px 14px;
   border-radius: 4px;
@@ -73,12 +77,12 @@
 }
 
 .book-link:hover {
-  background: #ac1c24;
+  background: #2e5c3e;
 }
 
 .schedule-note {
-  background: #fffbea;
-  border: 2px solid #fec904;
+  background: #d6ebe0;
+  border: 2px solid #c9c4b5;
   border-radius: 12px;
   padding: 24px;
   margin-top: 30px;
@@ -88,7 +92,7 @@
   font-size: 1rem;
   font-weight: 800;
   margin-bottom: 12px;
-  color: #333;
+  color: #2c2c28;
 }
 
 .schedule-note ul {
@@ -97,7 +101,7 @@
 
 .schedule-note ul li {
   font-size: 0.88rem;
-  color: #555;
+  color: #7a7568;
   margin-bottom: 8px;
   line-height: 1.6;
 }

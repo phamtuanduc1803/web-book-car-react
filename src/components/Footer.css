@@ -1,6 +1,6 @@
 .footer {
-  background: #1a1a1a;
-  color: #ccc;
+  background: #eeeae0;
+  color: #7a7568;
   padding-top: 50px;
   margin-top: 60px;
 }
@@ -13,7 +13,7 @@
 }
 
 .footer-col h4 {
-  color: #fec904;
+  color: #4f7c5c;
   font-size: 1rem;
   font-weight: 800;
   margin-bottom: 16px;
@@ -21,11 +21,19 @@
   letter-spacing: 0.5px;
 }
 
+.footer-logo-text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #2c2c28;
+  letter-spacing: 3px;
+  display: block;
+}
+
 .footer-desc {
   font-size: 0.9rem;
   line-height: 1.7;
   margin: 14px 0 16px;
-  color: #aaa;
+  color: #7a7568;
 }
 
 .footer-hotline {
@@ -36,7 +44,7 @@
 }
 
 .footer-hotline a {
-  color: #fec904;
+  color: #4f7c5c;
   font-size: 1.1rem;
 }
 
@@ -49,16 +57,16 @@
 
 .footer-col ul li {
   font-size: 0.9rem;
-  color: #bbb;
+  color: #7a7568;
 }
 
 .footer-col ul li a {
-  color: #bbb;
+  color: #7a7568;
   transition: color 0.2s;
 }
 
 .footer-col ul li a:hover {
-  color: #fec904;
+  color: #4f7c5c;
 }
 
 .contact-list li {
@@ -69,15 +77,15 @@
 }
 
 .footer-bottom {
-  background: #111;
+  background: #c9c4b5;
   padding: 16px 0;
-  border-top: 1px solid #333;
+  border-top: 1px solid #c9c4b5;
 }
 
 .footer-bottom p {
   text-align: center;
   font-size: 0.85rem;
-  color: #888;
+  color: #2c2c28;
 }
 
 @media (max-width: 900px) {

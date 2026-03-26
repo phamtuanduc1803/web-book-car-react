@@ -1,6 +1,6 @@
 .header {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #f8f7f2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,9 +13,12 @@
   height: 80px;
 }
 
-.logo img {
-  height: 60px;
-  width: auto;
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #4f7c5c;
+  letter-spacing: 2px;
+  font-style: normal;
 }
 
 .nav {
@@ -30,7 +33,7 @@
   padding: 8px 14px;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #333;
+  color: #2c2c28;
   border-radius: 4px;
   transition: color 0.2s, background 0.2s;
   white-space: nowrap;
@@ -38,8 +41,8 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: #000;
-  background: #fec904;
+  color: #2c2c28;
+  background: #d6ebe0;
 }
 
 .header-phone {
@@ -52,7 +55,7 @@
 .phone-number {
   font-weight: 800;
   font-size: 1.1rem;
-  color: #dd3333;
+  color: #4f7c5c;
 }
 
 .hamburger {
@@ -69,7 +72,7 @@
   display: block;
   width: 25px;
   height: 3px;
-  background: #333;
+  background: #2c2c28;
   border-radius: 2px;
 }
 
@@ -84,11 +87,11 @@
     top: 80px;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #f8f7f2;
     flex-direction: column;
     align-items: stretch;
     padding: 10px 20px 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     gap: 4px;
   }
 

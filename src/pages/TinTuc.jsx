@@ -17,7 +17,7 @@ const news = [
     category: 'Thông báo',
   },
   {
-    title: 'Bổ sung thêm 10 xe giường nằm cao cấp tuyến Hà Nội – Thái Bình',
+    title: 'Bổ sung thêm 10 xe giường nằm cao cấp tuyến Hà Nội – Hải Phòng',
     excerpt: 'Để đáp ứng nhu cầu đi lại ngày càng tăng, AnhHuy92 đầu tư thêm 10 xe giường nằm cao cấp với đầy đủ tiện nghi hiện đại.',
     date: '05/12/2024',
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',

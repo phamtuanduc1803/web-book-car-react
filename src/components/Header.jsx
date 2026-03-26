@@ -18,11 +18,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="logo">
-          <img
-            src="https://xephiethoc.com/wp-content/uploads/2024/07/phiethoc-1.png"
-            alt="Nhà xe AnhHuy92"
-            height="60"
-          />
+          <span className="logo-text">ANHHUY92</span>
         </Link>
 
         <nav className={`nav ${menuOpen ? 'nav--open' : ''}`}>
@@ -41,7 +37,7 @@ export default function Header() {
 
         <div className="header-phone">
           <span>📞</span>
-          <a href="tel:19009016" className="phone-number">1900.9016</a>
+          <a href="tel:0967046789" className="phone-number">0967046789</a>
         </div>
 
         <button

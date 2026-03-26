@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import './Home.css'
 
 const cities = [
-  'Hà Nội', 'Thái Bình', 'Nam Định', 'Hải Phòng', 'Hưng Yên', 'Hải Dương'
+  'Hà Nội', 'Sân bay Nội Bài', 'Hạ Long', 'Vân Đồn', 'Cẩm Phả', 'Móng Cái', 'Trà Cổ - Vạn Ninh'
 ]
 
 const steps = [
@@ -17,7 +17,7 @@ const services = [
   {
     icon: '🚌',
     title: 'Vận tải hành khách',
-    desc: 'Dịch vụ vận chuyển hành khách tuyến cố định Hà Nội – Thái Bình – Nam Định với hơn 30 chuyến mỗi ngày. Xe chất lượng cao, điều hòa, WiFi.',
+    desc: 'Dịch vụ vận chuyển hành khách tuyến cố định Hà Nội – Hạ Long – Vân Đồn – Cẩm Phả – Móng Cái – Trà Cổ. Xe chất lượng cao, điều hòa, WiFi.',
     link: '/lich-trinh',
     linkText: 'Xem lịch trình',
   },
@@ -39,21 +39,15 @@ const services = [
 
 const offices = [
   {
-    city: 'Hà Nội',
-    address: '71 Lê Duẩn, Hai Bà Trưng, Hà Nội',
-    phone: '024.3636.3636',
+    city: 'Hà Nội – Trần Khát Chân',
+    address: '113 - 115 Trần Khát Chân, Hai Bà Trưng, Hà Nội',
+    phone: '0967046789',
     time: '05:00 – 21:00',
   },
   {
-    city: 'Thái Bình',
-    address: '123 Lý Bôn, TP. Thái Bình',
-    phone: '02273.676.767',
-    time: '04:30 – 20:30',
-  },
-  {
-    city: 'Nam Định',
-    address: '45 Trần Hưng Đạo, TP. Nam Định',
-    phone: '02283.123.456',
+    city: 'Hà Nội – Khuất Duy Tiến',
+    address: 'Số 8 Khuất Duy Tiến, Nhân Chính, Thanh Xuân, Hà Nội',
+    phone: '0967046789',
     time: '05:00 – 21:00',
   },
 ]
@@ -61,21 +55,21 @@ const offices = [
 const routes = [
   {
     from: 'Hà Nội',
-    to: 'Thái Bình',
-    time: '3 giờ',
-    distance: '150 km',
-    trips: '30 chuyến/ngày',
-    price: '150.000đ',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ho_Guom.jpg/800px-Ho_Guom.jpg',
+    to: 'Hạ Long',
+    time: '3.5 giờ',
+    distance: '~175 km',
+    trips: '7 chuyến/ngày',
+    price: '400.000đ',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/H%E1%BA%A1_Long_Bay_with_boats.jpg/800px-H%E1%BA%A1_Long_Bay_with_boats.jpg',
   },
   {
     from: 'Hà Nội',
-    to: 'Nam Định',
-    time: '2.5 giờ',
-    distance: '120 km',
-    trips: '20 chuyến/ngày',
-    price: '130.000đ',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nam_Dinh_Cathedral.jpg/800px-Nam_Dinh_Cathedral.jpg',
+    to: 'Móng Cái',
+    time: '6 giờ',
+    distance: '~360 km',
+    trips: '4 chuyến/ngày',
+    price: '600.000đ',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ho_Guom.jpg/800px-Ho_Guom.jpg',
   },
 ]
 
@@ -269,8 +263,8 @@ export default function Home() {
             <p>Liên hệ hotline để được hỗ trợ 24/7</p>
           </div>
           <div className="cta-phones">
-            <a href="tel:19009016" className="cta-phone-btn">📞 1900.9016</a>
-            <a href="tel:02273676767" className="cta-phone-btn secondary">📞 02273.676.767</a>
+            <a href="tel:0967046789" className="cta-phone-btn">📞 0967046789</a>
+            <a href="tel:0967046789" className="cta-phone-btn secondary">📞 0967046789</a>
           </div>
         </div>
       </section>

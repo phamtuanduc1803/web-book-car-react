@@ -3,26 +3,46 @@ import './PageCommon.css'
 import './LichTrinh.css'
 
 const schedules = [
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '05:00', arrive: '08:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '06:00', arrive: '09:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '07:00', arrive: '10:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '08:00', arrive: '11:00', duration: '3h', price: '150.000đ', status: 'Gần đầy' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '09:00', arrive: '12:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '10:30', arrive: '13:30', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '12:00', arrive: '15:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '14:00', arrive: '17:00', duration: '3h', price: '150.000đ', status: 'Gần đầy' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '16:00', arrive: '19:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Thái Bình', depart: '18:00', arrive: '21:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Thái Bình', to: 'Hà Nội', depart: '04:30', arrive: '07:30', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Thái Bình', to: 'Hà Nội', depart: '05:30', arrive: '08:30', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Thái Bình', to: 'Hà Nội', depart: '06:30', arrive: '09:30', duration: '3h', price: '150.000đ', status: 'Gần đầy' },
-  { from: 'Thái Bình', to: 'Hà Nội', depart: '08:00', arrive: '11:00', duration: '3h', price: '150.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Nam Định', depart: '06:00', arrive: '08:30', duration: '2.5h', price: '130.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Nam Định', depart: '08:00', arrive: '10:30', duration: '2.5h', price: '130.000đ', status: 'Còn chỗ' },
-  { from: 'Hà Nội', to: 'Nam Định', depart: '10:00', arrive: '12:30', duration: '2.5h', price: '130.000đ', status: 'Gần đầy' },
-  { from: 'Hà Nội', to: 'Nam Định', depart: '14:00', arrive: '16:30', duration: '2.5h', price: '130.000đ', status: 'Còn chỗ' },
-  { from: 'Nam Định', to: 'Hà Nội', depart: '05:00', arrive: '07:30', duration: '2.5h', price: '130.000đ', status: 'Còn chỗ' },
-  { from: 'Nam Định', to: 'Hà Nội', depart: '07:00', arrive: '09:30', duration: '2.5h', price: '130.000đ', status: 'Còn chỗ' },
+  // Hà Nội → Hạ Long (3h30p) — 400.000đ
+  { from: 'Hà Nội', to: 'Hạ Long', depart: '05:00', arrive: '08:30', duration: '3h30p', price: '400.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Hạ Long', depart: '07:00', arrive: '10:30', duration: '3h30p', price: '400.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Hạ Long', depart: '09:00', arrive: '12:30', duration: '3h30p', price: '400.000đ', status: 'Gần đầy' },
+  { from: 'Hà Nội', to: 'Hạ Long', depart: '11:00', arrive: '14:30', duration: '3h30p', price: '400.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Hạ Long', depart: '13:00', arrive: '16:30', duration: '3h30p', price: '400.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Hạ Long', depart: '15:00', arrive: '18:30', duration: '3h30p', price: '400.000đ', status: 'Gần đầy' },
+  { from: 'Hà Nội', to: 'Hạ Long', depart: '17:00', arrive: '20:30', duration: '3h30p', price: '400.000đ', status: 'Còn chỗ' },
+  // Hà Nội → Cẩm Phả / Mông Dương (4h30p) — 450.000đ
+  { from: 'Hà Nội', to: 'Cẩm Phả (Mông Dương)', depart: '05:00', arrive: '09:30', duration: '4h30p', price: '450.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Cẩm Phả (Mông Dương)', depart: '07:00', arrive: '11:30', duration: '4h30p', price: '450.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Cẩm Phả (Mông Dương)', depart: '09:00', arrive: '13:30', duration: '4h30p', price: '450.000đ', status: 'Gần đầy' },
+  { from: 'Hà Nội', to: 'Cẩm Phả (Mông Dương)', depart: '13:00', arrive: '17:30', duration: '4h30p', price: '450.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Cẩm Phả (Mông Dương)', depart: '16:00', arrive: '20:30', duration: '4h30p', price: '450.000đ', status: 'Còn chỗ' },
+  // Hà Nội → Vân Đồn (4h) — 450.000đ
+  { from: 'Hà Nội', to: 'Vân Đồn', depart: '05:00', arrive: '09:00', duration: '4h', price: '450.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Vân Đồn', depart: '07:00', arrive: '11:00', duration: '4h', price: '450.000đ', status: 'Gần đầy' },
+  { from: 'Hà Nội', to: 'Vân Đồn', depart: '09:00', arrive: '13:00', duration: '4h', price: '450.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Vân Đồn', depart: '13:00', arrive: '17:00', duration: '4h', price: '450.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Vân Đồn', depart: '16:00', arrive: '20:00', duration: '4h', price: '450.000đ', status: 'Còn chỗ' },
+  // Hà Nội → Móng Cái (qua Tiên Yên, Đầm Hà, Hải Hà) (6h) — 600.000đ
+  { from: 'Hà Nội', to: 'Móng Cái', depart: '05:00', arrive: '11:00', duration: '6h', price: '600.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Móng Cái', depart: '07:00', arrive: '13:00', duration: '6h', price: '600.000đ', status: 'Gần đầy' },
+  { from: 'Hà Nội', to: 'Móng Cái', depart: '09:00', arrive: '15:00', duration: '6h', price: '600.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Móng Cái', depart: '14:00', arrive: '20:00', duration: '6h', price: '600.000đ', status: 'Còn chỗ' },
+  // Hà Nội → Trà Cổ / Vạn Ninh (6h30p) — 650.000đ
+  { from: 'Hà Nội', to: 'Trà Cổ - Vạn Ninh', depart: '05:00', arrive: '11:30', duration: '6h30p', price: '650.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Trà Cổ - Vạn Ninh', depart: '07:00', arrive: '13:30', duration: '6h30p', price: '650.000đ', status: 'Gần đầy' },
+  { from: 'Hà Nội', to: 'Trà Cổ - Vạn Ninh', depart: '10:00', arrive: '16:30', duration: '6h30p', price: '650.000đ', status: 'Còn chỗ' },
+  { from: 'Hà Nội', to: 'Trà Cổ - Vạn Ninh', depart: '14:00', arrive: '20:30', duration: '6h30p', price: '650.000đ', status: 'Còn chỗ' },
+  // Sân bay Nội Bài → Móng Cái (5h) — 800.000đ
+  { from: 'Sân bay Nội Bài', to: 'Móng Cái', depart: '06:00', arrive: '11:00', duration: '5h', price: '800.000đ', status: 'Còn chỗ' },
+  { from: 'Sân bay Nội Bài', to: 'Móng Cái', depart: '09:00', arrive: '14:00', duration: '5h', price: '800.000đ', status: 'Còn chỗ' },
+  { from: 'Sân bay Nội Bài', to: 'Móng Cái', depart: '12:00', arrive: '17:00', duration: '5h', price: '800.000đ', status: 'Gần đầy' },
+  { from: 'Sân bay Nội Bài', to: 'Móng Cái', depart: '15:00', arrive: '20:00', duration: '5h', price: '800.000đ', status: 'Còn chỗ' },
+  // Sân bay Nội Bài → Trà Cổ / Vạn Ninh (5h30p) — 850.000đ
+  { from: 'Sân bay Nội Bài', to: 'Trà Cổ - Vạn Ninh', depart: '06:00', arrive: '11:30', duration: '5h30p', price: '850.000đ', status: 'Còn chỗ' },
+  { from: 'Sân bay Nội Bài', to: 'Trà Cổ - Vạn Ninh', depart: '09:00', arrive: '14:30', duration: '5h30p', price: '850.000đ', status: 'Còn chỗ' },
+  { from: 'Sân bay Nội Bài', to: 'Trà Cổ - Vạn Ninh', depart: '12:00', arrive: '17:30', duration: '5h30p', price: '850.000đ', status: 'Gần đầy' },
+  { from: 'Sân bay Nội Bài', to: 'Trà Cổ - Vạn Ninh', depart: '15:00', arrive: '20:30', duration: '5h30p', price: '850.000đ', status: 'Còn chỗ' },
 ]
 
 const allFrom = [...new Set(schedules.map(s => s.from))]
@@ -102,7 +122,7 @@ export default function LichTrinh() {
                     </span>
                   </td>
                   <td>
-                    <a href="tel:19009016" className="book-link">Đặt ngay</a>
+                    <a href="tel:0967046789" className="book-link">Đặt ngay</a>
                   </td>
                 </tr>
               ))}
@@ -113,7 +133,7 @@ export default function LichTrinh() {
         <div className="schedule-note">
           <h3>📢 Lưu ý</h3>
           <ul>
-            <li>Lịch trình có thể thay đổi vào các ngày lễ, Tết. Vui lòng gọi hotline <strong>1900.9016</strong> để xác nhận.</li>
+            <li>Lịch trình có thể thay đổi vào các ngày lễ, Tết. Vui lòng gọi hotline <strong>0967046789</strong> để xác nhận.</li>
             <li>Hành khách nên có mặt tại bến xe trước giờ xuất phát ít nhất <strong>15 phút</strong>.</li>
             <li>Giá vé đã bao gồm phí đặt chỗ, không bao gồm phí hành lý quá khổ.</li>
             <li>Trẻ em dưới 5 tuổi đi cùng người lớn được miễn phí (không chiếm ghế).</li>

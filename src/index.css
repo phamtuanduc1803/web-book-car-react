@@ -7,19 +7,22 @@
 }
 
 :root {
-  --primary: #fec904;
-  --red: #dd3333;
-  --dark-red: #ac1c24;
-  --bg-light: #f1f1f1;
-  --text: #222;
-  --white: #fff;
-  --gray: #666;
+  --primary: #4f7c5c;
+  --primary-light: #d6ebe0;
+  --primary-dark: #2e5c3e;
+  --bg-main: #f8f7f2;
+  --bg-sub: #eeeae0;
+  --border: #c9c4b5;
+  --text: #2c2c28;
+  --text-sub: #7a7568;
+  --white: #ffffff;
+  --gray: #7a7568;
 }
 
 body {
   font-family: 'Mulish', sans-serif;
   color: var(--text);
-  background: var(--white);
+  background: var(--bg-main);
   font-size: 16px;
   line-height: 1.6;
 }
@@ -67,7 +70,7 @@ img {
 
 .btn-primary {
   background: var(--primary);
-  color: #000;
+  color: #fff;
   border: none;
   padding: 12px 28px;
   font-size: 1rem;
@@ -78,12 +81,12 @@ img {
 }
 
 .btn-primary:hover {
-  background: #e6b400;
+  background: var(--primary-dark);
 }
 
 .btn-red {
-  background: var(--red);
-  color: var(--white);
+  background: var(--primary-light);
+  color: var(--primary-dark);
   border: none;
   padding: 12px 28px;
   font-size: 1rem;
@@ -94,5 +97,6 @@ img {
 }
 
 .btn-red:hover {
-  background: #c02a2a;
+  background: var(--primary);
+  color: #fff;
 }

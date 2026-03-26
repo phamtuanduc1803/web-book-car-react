@@ -1,6 +1,6 @@
 .marquee-banner {
-  background: #fff3cd;
-  border-bottom: 1px solid #ffc107;
+  background: #d6ebe0;
+  border-bottom: 1px solid #c9c4b5;
   overflow: hidden;
   white-space: nowrap;
   padding: 6px 0;
@@ -10,7 +10,7 @@
   display: inline-block;
   animation: marquee 30s linear infinite;
   font-size: 0.85rem;
-  color: #856404;
+  color: #4f7c5c;
   font-weight: 600;
 }
 
