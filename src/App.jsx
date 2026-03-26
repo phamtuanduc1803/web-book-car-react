@@ -13,7 +13,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/web-book-car-react">
       <MarqueeBanner />
       <Header />
       <main>
