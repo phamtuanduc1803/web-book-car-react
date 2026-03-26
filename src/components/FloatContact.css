@@ -1,0 +1,54 @@
+.float-contact {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.float-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #dd3333;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 20px rgba(221,51,51,0.4);
+  animation: pulse 2s infinite;
+  transition: background 0.2s;
+}
+
+.float-phone:hover {
+  background: #ac1c24;
+}
+
+.float-icon {
+  font-size: 1.2rem;
+  animation: ring 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(221,51,51,0.4); }
+  50% { box-shadow: 0 4px 30px rgba(221,51,51,0.7); }
+}
+
+@keyframes ring {
+  0%, 100% { transform: rotate(0); }
+  10% { transform: rotate(-15deg); }
+  20% { transform: rotate(15deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(10deg); }
+  50% { transform: rotate(0); }
+}
+
+@media (max-width: 600px) {
+  .float-label {
+    display: none;
+  }
+  .float-phone {
+    padding: 14px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,74 @@
+.hotline-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: #fff;
+  border: 2px solid #fec904;
+  border-radius: 14px;
+  padding: 24px 32px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.hotline-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 30px;
+}
+
+.hotline-icon {
+  font-size: 2rem;
+}
+
+.hotline-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hotline-num {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #dd3333;
+}
+
+.hotline-divider {
+  width: 1px;
+  height: 50px;
+  background: #e0e0e0;
+}
+
+.map-section {
+  margin-top: 20px;
+}
+
+.map-placeholder {
+  background: #f8f8f8;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 60px;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .hotline-banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hotline-divider {
+    width: 80%;
+    height: 1px;
+  }
+
+  .hotline-item {
+    padding: 0;
+  }
+}

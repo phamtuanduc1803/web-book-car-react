@@ -1,0 +1,94 @@
+.footer {
+  background: #1a1a1a;
+  color: #ccc;
+  padding-top: 50px;
+  margin-top: 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-col h4 {
+  color: #fec904;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 14px 0 16px;
+  color: #aaa;
+}
+
+.footer-hotline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.footer-hotline a {
+  color: #fec904;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-col ul li {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: #fec904;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  background: #111;
+  padding: 16px 0;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
