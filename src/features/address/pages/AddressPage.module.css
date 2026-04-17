@@ -1,0 +1,146 @@
+/* ═══════════════════════════════════════
+   Block: hotline-banner
+   ═══════════════════════════════════════ */
+
+.hotline-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: 14px;
+  padding: 24px 32px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.hotline-banner__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 30px;
+}
+
+.hotline-banner__icon {
+  font-size: 2rem;
+}
+
+.hotline-banner__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hotline-banner__number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.hotline-banner__divider {
+  width: 1px;
+  height: 50px;
+  background: var(--color-border);
+}
+
+/* ═══════════════════════════════════════
+   Block: office-group
+   ═══════════════════════════════════════ */
+
+.office-group {
+  margin-bottom: 50px;
+}
+
+.office-group__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.office-group__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ═══════════════════════════════════════
+   Block: office-card
+   ═══════════════════════════════════════ */
+
+.office-card {
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.office-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 16px rgba(79, 124, 92, 0.15);
+}
+
+.office-card__name {
+  font-size: var(--text-base);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.office-card__detail {
+  font-size: 0.87rem;
+  color: var(--color-text-sub);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.office-card__detail-link {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* ═══════════════════════════════════════
+   Block: map-section
+   ═══════════════════════════════════════ */
+
+.map-section {
+  margin-top: 20px;
+}
+
+.map-section__placeholder {
+  background: var(--color-surface);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 60px;
+  text-align: center;
+  font-size: var(--text-base);
+  color: var(--color-text-sub);
+  margin-top: 20px;
+}
+
+/* ─── Responsive ─────────────────── */
+@media (max-width: 700px) {
+  .hotline-banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hotline-banner__divider {
+    width: 80%;
+    height: 1px;
+  }
+
+  .hotline-banner__item {
+    padding: 0;
+  }
+
+  .office-group__cards {
+    grid-template-columns: 1fr;
+  }
+}

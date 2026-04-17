@@ -1,0 +1,460 @@
+/* ═══════════════════════════════════════
+   Block: schedule-filter
+   ═══════════════════════════════════════ */
+
+.schedule-filter {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+.schedule-filter__row {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.schedule-filter__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.schedule-filter__label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+  text-transform: uppercase;
+}
+
+.schedule-filter__select,
+.schedule-filter__input {
+  padding: 10px 14px;
+  border: 2px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--color-text);
+  background: var(--color-bg);
+  outline: none;
+  width: 100%;
+}
+
+.schedule-filter__select:focus,
+.schedule-filter__input:focus {
+  border-color: var(--color-primary);
+}
+
+
+/* ─── Filter meta row ──────────────────── */
+
+.schedule-filter__meta {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.schedule-filter__count {
+  font-size: 0.88rem;
+  color: var(--color-text-sub);
+}
+
+/* ─── Return date toggle ───────────── */
+
+.schedule-filter__return-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.schedule-filter__return-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide native checkbox */
+.schedule-filter__return-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Custom checkbox box */
+.schedule-filter__return-check {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-base), border-color var(--transition-base);
+}
+
+.schedule-filter__return-check--checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.schedule-filter__return-check--checked::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.schedule-filter__return-toggle-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+  white-space: nowrap;
+}
+
+/* Expandable date + time row */
+.schedule-filter__return-fields {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.schedule-filter__return-field {
+  width: auto;
+}
+
+/* ═══════════════════════════════════════
+   Block: schedule-table  (desktop)
+   ═══════════════════════════════════════ */
+
+.schedule-table__wrap {
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.schedule-table__head-cell {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 800;
+  padding: 12px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.schedule-table__cell {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.schedule-table__row:hover .schedule-table__cell {
+  background: var(--color-primary-light);
+}
+
+.schedule-table__price {
+  color: #dd3333;
+  font-weight: 700;
+}
+
+.schedule-table__pickup {
+  font-size: 0.82rem;
+  color: var(--color-text-sub);
+  white-space: nowrap;
+}
+
+/* ═══════════════════════════════════════
+   Block: badge
+   ═══════════════════════════════════════ */
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.badge--available {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge--nearly-full {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+/* ═══════════════════════════════════════
+   Block: book-link  (table version)
+   ═══════════════════════════════════════ */
+
+.book-link {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--transition-base);
+}
+
+.book-link:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ═══════════════════════════════════════
+   Block: schedule-cards  (mobile only)
+   ═══════════════════════════════════════ */
+
+.schedule-cards {
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* ═══════════════════════════════════════
+   Block: trip-card
+   ═══════════════════════════════════════ */
+
+.trip-card {
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 18px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.trip-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 16px rgba(79, 124, 92, 0.12);
+}
+
+/* ─── Pickup ───────────────────────────── */
+
+.trip-card__pickup {
+  font-size: 0.8rem;
+  color: var(--color-text-sub);
+}
+
+/* ─── Route line ───────────────────────── */
+
+.trip-card__route {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trip-card__city {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.trip-card__route-arrow {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/* ─── Time row ─────────────────────────── */
+
+.trip-card__times {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trip-card__time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.trip-card__time {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-text);
+  letter-spacing: 0.5px;
+}
+
+.trip-card__time-label {
+  font-size: 0.72rem;
+  color: var(--color-text-sub);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.trip-card__duration-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.trip-card__duration-line {
+  width: 100%;
+  height: 2px;
+  background: var(--color-border);
+  border-radius: 2px;
+  position: relative;
+}
+
+.trip-card__duration-line::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: -4px;
+  border-left: 7px solid var(--color-border);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.trip-card__duration-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+}
+
+/* ─── Footer row ───────────────────────── */
+
+.trip-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trip-card__price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #dd3333;
+}
+
+/* ─── Book button ──────────────────────── */
+
+.trip-card__book-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--transition-base);
+}
+
+.trip-card__book-btn:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ═══════════════════════════════════════
+   Block: schedule-note
+   ═══════════════════════════════════════ */
+
+.schedule-note {
+  background: var(--color-primary-light);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-top: 30px;
+}
+
+.schedule-note__title {
+  font-size: var(--text-base);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.schedule-note__list {
+  padding-left: 20px;
+}
+
+.schedule-note__list-item {
+  font-size: 0.88rem;
+  color: var(--color-text-sub);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  .schedule-filter__field {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .schedule-filter {
+    padding: 16px;
+  }
+
+  .schedule-filter__row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .schedule-filter__field {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .schedule-filter__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .schedule-filter__return-fields {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Hide table, show cards */
+  .schedule-table__wrap {
+    display: none;
+  }
+
+  .schedule-cards {
+    display: flex;
+  }
+}

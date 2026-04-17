@@ -1,0 +1,63 @@
+/* ═══════════════════════════════════════
+   Block: trip-info
+   ═══════════════════════════════════════ */
+
+.trip-info {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.trip-info__route {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trip-info__city {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.trip-info__arrow {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.trip-info__meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--color-text-sub);
+}
+
+.trip-info__price {
+  font-weight: 800;
+  color: #dd3333;
+  font-size: 1rem;
+}
+
+/* ─── Responsive ─────────────────────── */
+
+@media (max-width: 600px) {
+  .trip-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .trip-info__meta {
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+}

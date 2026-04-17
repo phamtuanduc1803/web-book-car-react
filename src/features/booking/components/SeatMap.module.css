@@ -1,0 +1,329 @@
+/* ═══════════════════════════════════════
+   Block: seat-map
+   ═══════════════════════════════════════ */
+
+.seat-map {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.seat-map__title {
+  font-size: var(--text-base);
+  font-weight: 800;
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* ─── Vehicle type selector ────────────── */
+
+.vehicle-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.vehicle-selector__label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+  white-space: nowrap;
+}
+
+.vehicle-selector__btn {
+  padding: 6px 14px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-bg);
+  color: var(--color-text-sub);
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+}
+
+.vehicle-selector__btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.vehicle-selector__btn--active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+/* ─── Diagram wrapper (legend + bus) ──── */
+
+.seat-map__diagram {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* ─── Legend (vertical) ────────────────── */
+
+.seat-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.seat-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.seat-legend__label {
+  font-size: 0.82rem;
+  color: var(--color-text-sub);
+  white-space: nowrap;
+}
+
+/* ─── Bus shape ────────────────────────── */
+
+.bus {
+  display: inline-flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.bus__body {
+  padding: 12px 14px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each row: [left seat] [aisle/middle] [right seat] */
+.bus__row {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 8px;
+  align-items: center;
+}
+
+/* Dashed divider after front section */
+.bus__row--divider {
+  padding-bottom: 10px;
+  border-bottom: 2px dashed var(--color-border);
+}
+
+/* Invisible spacer cell */
+.bus__cell--empty {
+  width: 48px;
+  height: 48px;
+}
+
+/* Aisle visual indicator */
+.bus__aisle {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bus__aisle::after {
+  content: '';
+  width: 4px;
+  height: 28px;
+  background: var(--color-border);
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+/* Door label at bottom-right */
+.bus__door-label {
+  padding: 4px 14px 6px;
+  text-align: right;
+  font-size: 0.7rem;
+  color: var(--color-text-sub);
+  letter-spacing: 0.01em;
+}
+
+.bus__rear {
+  height: 10px;
+  background: var(--color-border);
+  margin: 0 14px 10px;
+  border-radius: 4px;
+}
+
+/* ═══════════════════════════════════════
+   Block: seat
+   ═══════════════════════════════════════ */
+
+.seat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  width: 48px;
+  font-family: inherit;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+/* ─── Seat icon SVG ─────────────────── */
+
+.seat__icon {
+  width: 40px;
+  height: 32px;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Smaller version used in legend */
+.seat__icon--small {
+  width: 26px;
+  height: 21px;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ─── Seat number label ─────────────── */
+
+.seat__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-text-sub);
+  line-height: 1;
+}
+
+.seat__label--selected {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.seat__label--booked {
+  color: #c0392b;
+}
+
+.seat__label--pending {
+  color: #c87000;
+}
+
+.seat__label--driver {
+  font-size: 0.62rem;
+  color: var(--color-text-sub);
+}
+
+/* ─── Seat state modifiers ──────────── */
+
+/* Visual feedback is handled by SVG fill/stroke in SeatIcon.
+   These modifiers control behaviour and transform only. */
+
+.seat--available:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 2px 6px rgba(79, 124, 92, 0.3));
+}
+
+.seat--selected {
+  transform: scale(1.1);
+  filter: drop-shadow(0 2px 6px rgba(79, 124, 92, 0.35));
+}
+
+.seat--booked {
+  cursor: not-allowed;
+}
+
+.seat--pending {
+  cursor: not-allowed;
+}
+
+.seat--driver {
+  cursor: default;
+}
+
+/* ─── Responsive ─────────────────────── */
+
+@media (max-width: 900px) {
+  .seat-map {
+    align-items: center;
+  }
+}
+
+/* Legend stays to the left of bus at all sizes.
+   Only scale down seat cells to fit narrow screens. */
+
+@media (max-width: 600px) {
+  .seat-map__diagram {
+    gap: 14px;
+  }
+
+  .bus__row {
+    grid-template-columns: repeat(3, 42px);
+    gap: 6px;
+  }
+
+  .seat,
+  .bus__cell--empty,
+  .bus__aisle {
+    width: 42px;
+  }
+
+  .seat__icon {
+    width: 34px;
+    height: 27px;
+  }
+
+  .seat__icon--small {
+    width: 22px;
+    height: 18px;
+  }
+
+  .seat-legend {
+    gap: 8px;
+  }
+
+  .seat-legend__label {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .seat-map__diagram {
+    gap: 10px;
+  }
+
+  .bus__row {
+    grid-template-columns: repeat(3, 38px);
+    gap: 5px;
+  }
+
+  .seat,
+  .bus__cell--empty,
+  .bus__aisle {
+    width: 38px;
+  }
+
+  .seat__icon {
+    width: 30px;
+    height: 24px;
+  }
+
+  .seat__icon--small {
+    width: 20px;
+    height: 16px;
+  }
+
+  .seat-legend {
+    gap: 7px;
+  }
+
+  .seat-legend__label {
+    font-size: 0.7rem;
+  }
+
+}

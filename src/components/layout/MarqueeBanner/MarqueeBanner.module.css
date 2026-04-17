@@ -1,0 +1,24 @@
+/* ═══════════════════════════════════════
+   Block: marquee-banner
+   ═══════════════════════════════════════ */
+
+.marquee-banner {
+  background: var(--color-primary-light);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 6px 0;
+}
+
+.marquee-banner__inner {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}

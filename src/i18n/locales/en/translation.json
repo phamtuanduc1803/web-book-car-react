@@ -1,0 +1,498 @@
+{
+  "header": {
+    "login": "Login",
+    "logout": "Logout",
+    "langVi": "Vietnamese",
+    "langEn": "English"
+  },
+
+  "marquee": {
+    "text": "⚠️ This website is a sample/demo built to showcase the user interface and experience. All content, images, and bus operator information (if any) are for illustration purposes only and do not represent any specific transport operator."
+  },
+
+  "floatContact": {
+    "copied": "✅ Phone number copied"
+  },
+
+  "footer": {
+    "desc": "AnhHuy92 Bus – A trusted passenger transport operator on the Hanoi – Ha Long – Van Don – Cam Pha – Mong Cai – Tra Co route. Dedicated service, absolute safety.",
+    "hotline": "Hotline:",
+    "quickLinks": "Quick Links",
+    "popularRoutes": "Popular Routes",
+    "contact": "Contact",
+    "copyright": "© {{year}} AnhHuy92 Bus. All rights reserved.",
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "schedule": "Bus Schedule",
+      "address": "Phone & Address",
+      "news": "News",
+      "contact": "Contact"
+    },
+    "routes": [
+      "Hanoi → Ha Long",
+      "Hanoi → Van Don",
+      "Hanoi → Cam Pha",
+      "Hanoi → Mong Cai",
+      "Hanoi → Tra Co - Van Ninh",
+      "Noi Bai Airport → Mong Cai"
+    ]
+  },
+
+  "home": {
+    "hero": {
+      "title": "BOOK YOUR BUS TICKET\nEASILY ONLINE",
+      "subtitle": "Fast booking – Safe – Convenient anytime, anywhere"
+    },
+    "bookingForm": {
+      "from": "From",
+      "to": "To",
+      "date": "Departure Date",
+      "returnDate": "Return Date",
+      "returnDateOptional": "(Optional)",
+      "selectFrom": "-- Select departure --",
+      "selectTo": "-- Select destination --",
+      "swapTitle": "Swap",
+      "search": "🔍 Search",
+      "tabBook": "Book Ticket",
+      "tabCharter": "Charter",
+      "charterNow": "Charter Now →",
+      "charterVehicles": [
+        {
+          "type": "9",
+          "icon": "🚐",
+          "name": "9-Seat Van",
+          "seats": "9",
+          "desc": "Perfect for families and small groups",
+          "price": "4,500,000₫ / route",
+          "note": "Price applies to Hanoi – Mong Cai route. Contact us for other routes."
+        },
+        {
+          "type": "11",
+          "icon": "🚌",
+          "name": "11-Seat Minibus",
+          "seats": "11",
+          "desc": "Ideal for medium-sized groups",
+          "price": "5,000,000₫ / route",
+          "note": "Price applies to Hanoi – Mong Cai route. Contact us for other routes."
+        },
+        {
+          "type": "12",
+          "icon": "🚌",
+          "name": "12-Seat Minibus",
+          "seats": "12",
+          "desc": "Great for large groups or cargo",
+          "price": "Contact for quote",
+          "note": "Please contact hotline 0967046789 for detailed pricing and consultation."
+        }
+      ]
+    },
+    "steps": {
+      "title": "BOOK IN JUST 4 SIMPLE STEPS",
+      "subtitle": "Fast and easy booking process right on our website",
+      "items": [
+        { "icon": "🔍", "step": "01", "title": "Search", "desc": "Enter your departure, destination, and travel date to find the right bus." },
+        { "icon": "🚌", "step": "02", "title": "Select Trip", "desc": "Choose your trip, departure time, and seat type based on your preference." },
+        { "icon": "💳", "step": "03", "title": "Payment", "desc": "Fast and secure online payment with multiple payment options available." },
+        { "icon": "🎫", "step": "04", "title": "Get Ticket", "desc": "Receive your e-ticket via email or SMS. Present it when boarding." }
+      ]
+    },
+    "services": {
+      "title": "OUR SERVICES",
+      "subtitle": "AnhHuy92 offers a variety of transport services for passengers",
+      "items": [
+        {
+          "icon": "🚌",
+          "title": "Passenger Transport",
+          "desc": "Fixed-route passenger transport: Hanoi – Ha Long – Van Don – Cam Pha – Mong Cai – Tra Co. Premium buses with AC and WiFi.",
+          "link": "/schedule",
+          "linkText": "View schedule"
+        },
+        {
+          "icon": "📦",
+          "title": "Express Delivery",
+          "desc": "Fast, secure parcel and goods delivery between provinces at competitive prices. Real-time tracking available.",
+          "link": "/contact",
+          "linkText": "Send now"
+        },
+        {
+          "icon": "📋",
+          "title": "Contract & Cargo",
+          "desc": "Track your order or transport contract by tracking code. Transparent, accurate, and continuously updated.",
+          "link": "/contact",
+          "linkText": "Track now"
+        }
+      ]
+    },
+    "routes": {
+      "title": "POPULAR ROUTES",
+      "subtitle": "Our most frequently booked routes",
+      "bookNow": "Book Now",
+      "items": [
+        {
+          "from": "Hanoi", "to": "Ha Long",
+          "fromCity": "Hà Nội", "toCity": "Hạ Long",
+          "time": "3.5 hrs", "distance": "~175 km", "trips": "7 trips/day", "price": "400,000₫",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/H%E1%BA%A1_Long_Bay_with_boats.jpg/800px-H%E1%BA%A1_Long_Bay_with_boats.jpg"
+        },
+        {
+          "from": "Hanoi", "to": "Van Don",
+          "fromCity": "Hà Nội", "toCity": "Vân Đồn",
+          "time": "4 hrs", "distance": "~200 km", "trips": "5 trips/day", "price": "450,000₫",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/H%E1%BA%A1_Long_Bay_crop.jpg/800px-H%E1%BA%A1_Long_Bay_crop.jpg"
+        },
+        {
+          "from": "Hanoi", "to": "Mong Cai",
+          "fromCity": "Hà Nội", "toCity": "Móng Cái",
+          "time": "6 hrs", "distance": "~360 km", "trips": "4 trips/day", "price": "600,000₫",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ho_Guom.jpg/800px-Ho_Guom.jpg"
+        },
+        {
+          "from": "Hanoi", "to": "Tra Co - Van Ninh",
+          "fromCity": "Hà Nội", "toCity": "Trà Cổ - Vạn Ninh",
+          "time": "6.5 hrs", "distance": "~320 km", "trips": "4 trips/day", "price": "650,000₫",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tran_Quoc_Pagoda.jpg/800px-Tran_Quoc_Pagoda.jpg"
+        }
+      ]
+    },
+    "offices": {
+      "title": "OFFICES & AGENTS",
+      "subtitle": "Our office network serving the entire route",
+      "labelAddress": "Address:",
+      "labelPhone": "Phone:",
+      "labelHours": "Opening hours:",
+      "items": [
+        {
+          "city": "Hanoi – Tran Khat Chan",
+          "address": "113 - 115 Tran Khat Chan, Hai Ba Trung, Hanoi",
+          "phone": "0967046789",
+          "time": "05:00 – 21:00"
+        },
+        {
+          "city": "Hanoi – Khuat Duy Tien",
+          "address": "No. 8 Khuat Duy Tien, Nhan Chinh, Thanh Xuan, Hanoi",
+          "phone": "0967046789",
+          "time": "05:00 – 21:00"
+        }
+      ]
+    },
+    "amenities": {
+      "title": "PREMIUM AMENITIES",
+      "subtitle": "Experience first-class service on every journey",
+      "items": [
+        { "icon": "🛋️", "title": "Premium Interior", "desc": "Spacious seats with soft cushioning and comfortable footrests." },
+        { "icon": "📶", "title": "Free WiFi", "desc": "High-speed internet throughout the entire journey." },
+        { "icon": "🍵", "title": "Light Refreshments", "desc": "Complimentary drinks and light snacks for all passengers." },
+        { "icon": "🧴", "title": "Regular Sanitization", "desc": "Vehicles are cleaned and disinfected after every trip." },
+        { "icon": "❄️", "title": "Dual-zone AC", "desc": "Modern air conditioning system maintaining ideal temperature." },
+        { "icon": "🔌", "title": "Phone Charging", "desc": "Each seat has USB port and power outlet for charging devices." }
+      ]
+    },
+    "cta": {
+      "title": "Book your ticket today!",
+      "desc": "Contact our hotline for 24/7 support"
+    }
+  },
+
+  "about": {
+    "pageTitle": "About Us",
+    "pageSubtitle": "AnhHuy92 Bus – Over 20 years of passenger service",
+    "heading": "About AnhHuy92 Bus",
+    "para1": "AnhHuy92 Bus was established in 2003 and is one of the most trusted passenger transport operators on the Hanoi – Hung Yen – Hai Duong – Hai Phong – Mong Cai route. Over more than 20 years of operation, we have served millions of passengers with continuously improving service quality.",
+    "para2": "With a modern fleet and a team of experienced, professionally trained drivers skilled in safe driving and customer service, AnhHuy92 is committed to providing a comfortable, safe, and punctual travel experience for all passengers.",
+    "para3": "We continuously invest in renewing our fleet, upgrading the online booking system, and expanding our agent network to serve passengers better every day.",
+    "stats": [
+      { "number": "20+", "label": "Years of experience" },
+      { "number": "50+", "label": "Modern vehicles" },
+      { "number": "30+", "label": "Trips per day" },
+      { "number": "1M+", "label": "Passengers served" }
+    ],
+    "values": {
+      "title": "Core Values",
+      "items": [
+        { "icon": "🛡️", "title": "Safety", "desc": "Safety is our top priority on every trip. Vehicles are regularly inspected and drivers strictly follow traffic regulations." },
+        { "icon": "⏰", "title": "Punctuality", "desc": "We commit to departing and arriving on time. Passengers can confidently plan their journeys." },
+        { "icon": "💎", "title": "Quality", "desc": "Premium vehicles with full amenities: air conditioning, WiFi, comfortable seats, complimentary drinks." },
+        { "icon": "🤝", "title": "Dedication", "desc": "Friendly, attentive staff supporting passengers from booking to safe arrival." }
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "quote": "\"Connecting people and bringing convenience and safety to every journey. AnhHuy92 is more than a bus company – we are your trusted travel companion on every road.\""
+    }
+  },
+
+  "schedule": {
+    "pageTitle": "Bus Schedule",
+    "pageSubtitle": "Bus departure times and daily schedule information",
+    "filter": {
+      "from": "From",
+      "to": "To",
+      "date": "Travel Date",
+      "time": "From time",
+      "returnDate": "Return Date",
+      "clearReturnDate": "Clear return date",
+      "placeholderFrom": "-- Select departure --",
+      "placeholderTo": "-- Select destination --",
+      "reset": "Show all",
+      "found": "Found",
+      "foundSuffix": "trips"
+    },
+    "table": {
+      "from": "From",
+      "to": "To",
+      "pickup": "Pickup Point",
+      "depart": "Departure",
+      "arrive": "Arrival",
+      "duration": "Duration",
+      "price": "Price",
+      "status": "Status",
+      "book": "Book"
+    },
+    "status": {
+      "seats": "seats left"
+    },
+    "bookNow": "Book Now",
+    "notes": {
+      "title": "📢 Notes",
+      "items": [
+        "Schedule may change on public holidays and Tet. Please call hotline <strong>0967046789</strong> to confirm.",
+        "Passengers should arrive at the terminal at least <strong>15 minutes</strong> before departure.",
+        "Ticket price includes seat reservation fee, excluding oversized baggage fees.",
+        "Children under 5 traveling with adults are free (no seat occupied)."
+      ]
+    }
+  },
+
+  "booking": {
+    "pageTitle": "Select Seats & Confirm",
+    "pageSubtitle": "Choose your seats and fill in your details to complete the booking",
+    "frontLabel": "Front",
+    "driver": "Driver",
+    "seatMap": "Seat Map",
+    "seatLabel": "Seat",
+    "perSeat": "seat",
+    "selectedSeats": "Selected Seats",
+    "noSeatSelected": "No seats selected",
+    "total": "Total",
+    "legend": {
+      "available": "Available",
+      "selected": "Selecting",
+      "pending": "Pending Payment",
+      "booked": "Booked"
+    },
+    "confirmForm": {
+      "title": "Passenger Information",
+      "name": "Full Name *",
+      "namePlaceholder": "John Doe",
+      "phone": "Phone Number *",
+      "phonePlaceholder": "0912 345 678",
+      "submit": "Confirm Booking",
+      "submitDisabled": "Please select a seat"
+    },
+    "vehicle": {
+      "selectLabel": "Vehicle Type",
+      "label": "Vehicle",
+      "label9": "9 Seats",
+      "label12": "12 Seats"
+    },
+    "doorLabel": "Entry / Exit Door",
+    "success": {
+      "title": "Booking Successful!",
+      "desc": "We will contact you to confirm as soon as possible.",
+      "back": "Back to Schedule"
+    }
+  },
+
+  "charter": {
+    "pageTitle": "Charter Service",
+    "pageSubtitle": "Flexible vehicle charter, door-to-door service",
+    "seats": "seats",
+    "featuresTitle": "Included Amenities",
+    "features": [
+      "New-model vehicles with dual-zone AC",
+      "Professional, experienced drivers",
+      "24/7 service, always on time",
+      "Full passenger insurance coverage",
+      "Unlimited luggage support",
+      "Free WiFi on board"
+    ],
+    "vehicles": [
+      {
+        "type": "9",
+        "icon": "🚐",
+        "name": "9-Seat Van",
+        "seats": "9",
+        "price": "4,500,000₫ / route",
+        "note": "Price applies to Hanoi – Mong Cai route. Contact us for other routes."
+      },
+      {
+        "type": "11",
+        "icon": "🚌",
+        "name": "11-Seat Minibus",
+        "seats": "11",
+        "price": "5,000,000₫ / route",
+        "note": "Price applies to Hanoi – Mong Cai route. Contact us for other routes."
+      },
+      {
+        "type": "12",
+        "icon": "🚌",
+        "name": "12-Seat Minibus",
+        "seats": "12",
+        "price": "Contact for quote",
+        "note": "Please contact hotline 0967046789 for detailed pricing."
+      }
+    ],
+    "form": {
+      "title": "Request a Quote",
+      "vehicleLabel": "Vehicle",
+      "name": "Full Name *",
+      "namePlaceholder": "John Doe",
+      "phone": "Phone Number *",
+      "phonePlaceholder": "0912 345 678",
+      "route": "Route *",
+      "routePlaceholder": "E.g.: Hanoi → Mong Cai",
+      "date": "Rental Date *",
+      "note": "Additional Notes",
+      "notePlaceholder": "Number of passengers, pick-up point, special requests...",
+      "submit": "Send Request",
+      "orCall": "Or call us:"
+    },
+    "success": {
+      "title": "Request Sent!",
+      "desc": "We will contact you within 30 minutes to confirm and provide a quote.",
+      "back": "Go Back"
+    }
+  },
+
+  "contact": {
+    "pageTitle": "Contact",
+    "pageSubtitle": "We are always ready to support you 24/7",
+    "formTitle": "Send Us a Message",
+    "infoTitle": "Contact Information",
+    "form": {
+      "name": "Full name *",
+      "namePlaceholder": "John Doe",
+      "phone": "Phone number *",
+      "phonePlaceholder": "0912 345 678",
+      "email": "Email",
+      "emailPlaceholder": "example@email.com",
+      "subject": "Subject",
+      "selectSubject": "-- Select subject --",
+      "message": "Message *",
+      "messagePlaceholder": "Enter your message here...",
+      "submit": "📨 Send message",
+      "success": "✅ Thank you for reaching out! We will respond as soon as possible."
+    },
+    "subjects": [
+      "Book a ticket",
+      "Send goods",
+      "Track an order",
+      "Complaint",
+      "Business cooperation",
+      "Other"
+    ],
+    "info": {
+      "hotlineBooking": "Booking hotline",
+      "hotlineFree": "(Free, 24/7)",
+      "hotlineOffice": "Office hotline",
+      "officeHN1": "Hanoi Office – Tran Khat Chan",
+      "officeHN1Address": "113 - 115 Tran Khat Chan, Hai Ba Trung, Hanoi",
+      "officeHN2": "Hanoi Office – Khuat Duy Tien",
+      "officeHN2Address": "No. 8 Khuat Duy Tien, Nhan Chinh, Thanh Xuan, Hanoi",
+      "workingHours": "Working hours",
+      "dailyHours": "Daily: 05:00 – 21:00",
+      "hotline247": "Hotline: 24/7"
+    }
+  },
+
+  "news": {
+    "pageTitle": "News",
+    "pageSubtitle": "Latest updates from AnhHuy92 Bus",
+    "readMore": "Read more →",
+    "categories": {
+      "announcement": "Announcement",
+      "news": "News",
+      "promotion": "Promotion",
+      "guide": "Guide"
+    },
+    "items": [
+      {
+        "title": "AnhHuy92 Bus launches new online ticketing system",
+        "excerpt": "From March 2025, passengers can book AnhHuy92 tickets fully online through our website with a user-friendly interface and fast payments.",
+        "date": "20/03/2025",
+        "img": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80",
+        "category": "announcement"
+      },
+      {
+        "title": "Tet Holiday 2025 Schedule – Early Booking Information",
+        "excerpt": "AnhHuy92 Bus announces the Tet 2025 schedule and early booking guide to ensure seats for passengers traveling home for Tet.",
+        "date": "10/01/2025",
+        "img": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80",
+        "category": "announcement"
+      },
+      {
+        "title": "10 new premium sleeper buses added on Hanoi – Hai Phong route",
+        "excerpt": "To meet growing travel demand, AnhHuy92 invests in 10 more premium sleeper buses with full modern amenities.",
+        "date": "05/12/2024",
+        "img": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+        "category": "news"
+      },
+      {
+        "title": "Promotion – 20% off bus tickets in November",
+        "excerpt": "Celebrating 21 years of establishment, AnhHuy92 offers 20% off vouchers for the first 500 passengers booking online in November 2024.",
+        "date": "01/11/2024",
+        "img": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80",
+        "category": "promotion"
+      },
+      {
+        "title": "Guide to sending goods via AnhHuy92 Bus",
+        "excerpt": "AnhHuy92's cargo delivery service is fast, safe, and affordable. Orders can be tracked in real-time via tracking code.",
+        "date": "15/10/2024",
+        "img": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80",
+        "category": "guide"
+      },
+      {
+        "title": "New office opens in Nam Dinh",
+        "excerpt": "AnhHuy92 opens a new office at 45 Tran Hung Dao Street, Nam Dinh City, to better serve passengers on the Nam Dinh – Hanoi route.",
+        "date": "01/09/2024",
+        "img": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
+        "category": "news"
+      }
+    ]
+  },
+
+  "address": {
+    "pageTitle": "Phone & Address",
+    "pageSubtitle": "AnhHuy92 Bus office and agent network",
+    "hotlines": [
+      { "label": "Booking hotline", "number": "0967046789" },
+      { "label": "Support hotline", "number": "0967046789" },
+      { "label": "Emergency hotline", "number": "0967046789" }
+    ],
+    "hanoiOfficesTitle": "🏙️ Hanoi Offices",
+    "hanoiOffices": [
+      {
+        "name": "Hanoi Office – Tran Khat Chan",
+        "address": "113 - 115 Tran Khat Chan, Hai Ba Trung, Hanoi",
+        "phone": "0967046789",
+        "time": "05:00 – 21:00"
+      },
+      {
+        "name": "Hanoi Office – Khuat Duy Tien",
+        "address": "No. 8 Khuat Duy Tien, Nhan Chinh, Thanh Xuan, Hanoi",
+        "phone": "0967046789",
+        "time": "05:00 – 21:00"
+      }
+    ],
+    "officeCard": {
+      "address": "Address:",
+      "phone": "Phone:",
+      "hours": "Opening hours:"
+    },
+    "map": {
+      "title": "Office Map",
+      "placeholder": "🗺️ Please contact hotline <strong>0967046789</strong> for directions to the nearest office."
+    }
+  }
+}

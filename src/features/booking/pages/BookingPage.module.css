@@ -1,0 +1,18 @@
+/* ═══════════════════════════════════════
+   Block: booking-layout
+   ═══════════════════════════════════════ */
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ─── Responsive ─────────────────────── */
+
+@media (max-width: 900px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+}
