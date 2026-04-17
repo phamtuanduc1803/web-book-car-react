@@ -1,0 +1,1 @@
+var e=`/web-book-car-react/assets/interior-teal-Cd4nUD7x.webp`;export{e as t};

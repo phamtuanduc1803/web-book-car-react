@@ -1,0 +1,1 @@
+var e=`/web-book-car-react/assets/van-side-B7BTqtsx.webp`;export{e as t};

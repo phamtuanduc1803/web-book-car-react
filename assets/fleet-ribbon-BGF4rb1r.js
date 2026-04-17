@@ -1,0 +1,1 @@
+var e=`/web-book-car-react/assets/fleet-ribbon-CuPYCip1.webp`;export{e as t};

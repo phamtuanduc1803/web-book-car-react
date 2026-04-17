@@ -1,0 +1,1 @@
+var e=`/web-book-car-react/assets/fleet-anhhuy92-CJn6mhd6.webp`;export{e as t};
